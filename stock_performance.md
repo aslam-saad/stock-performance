@@ -131,8 +131,8 @@ annual return increases, but decreases again at a value of about 0.6, this is th
 at which the risks increase significantly. This ensures a negative relation between relative
 win rate and risks.
 
-3-D plotting for annual return on the x-axis, total risk on the y-axis, and relative win rate on
-the z-axis may give a better understanding of the relation between the three variables.
+Plotting the annual return on the x-axis, total risk on the y-axis, and relative win rate on
+the z-axis can help understand the relation between the three variables better.
 
 ``` r
 interleave <- function(x1, x2) as.vector(rbind(x1, x2))
@@ -155,10 +155,6 @@ mtext3d("Total Risk", edge = "y+-", line = 3.7)
 mtext3d("Relative Win-Rate", edge = "z--", line = 3)
 rgl.snapshot("plot3d.png")
 ```
-
-![](figures/plot3d.png)
-
-*3D plots with different point of view*
 
 The figure shows that with increasing annual return, total risk increases also. Because
 relative win rate depends positively on annual return and negatively on total risk, then the
